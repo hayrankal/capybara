@@ -11,7 +11,6 @@ local isVIPServer = ReplicatedStorage.Remotes.Extras.IsVIPServer:InvokeServer()
 
 if not isVIPServer then
     task.spawn(main)
-    task.spawn(farm)
 else
     LocalPlayer:Kick("Private Servers Not Supported, Please Use Script In Public Server")
 end
